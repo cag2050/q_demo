@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         qConsole () {
-            Q.reject(new Error('reject的error'))
+            Q.reject(new Error('reject的error eeee'))
                 .done()
         }
     }
