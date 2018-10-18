@@ -5,18 +5,18 @@
 </template>
 
 <script>
-import q from 'q'
+import Q from 'q'
 
 export default {
     mounted () {
-        // this.qConsole1()
+        this.qConsole1()
         this.qConsole2()
     },
     methods: {
         // 使用方法1：
-        // q.Promise((resolve, reject) => {
+        // Q.Promise((resolve, reject) => {
         qConsole1 () {
-            q.Promise((resolve, reject) => {
+            Q.Promise((resolve, reject) => {
                 throw new Error('error info')
                 resolve('xxx')
             })
@@ -34,11 +34,11 @@ export default {
                 .done()
         },
         // 使用方法2：
-        // q.resolve().then()
+        // Q.resolve().then()
         qConsole2 () {
-            q.resolve()
+            Q.resolve()
                 .then(() => {
-                    return q.Promise((resolve, reject) => {
+                    return Q.Promise((resolve, reject) => {
                         resolve('2222')
                     })
                 })
