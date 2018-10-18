@@ -24,6 +24,10 @@ export default new Router({
         {
             path: '/q',
             component: () => import(/* webpackChunkName: "q" */ './views/qDemo.vue')
+        },
+        {
+            path: '/q_reject',
+            component: () => import(/* webpackChunkName: "q" */ './views/qReject.vue')
         }
     ]
 })

@@ -6,6 +6,8 @@
             <router-link to="/about">About</router-link>
             |
             <router-link to="/q">q 库使用</router-link>
+            |
+            <router-link to="/q_reject">Q.reject()</router-link>
         </div>
         <router-view/>
     </div>
